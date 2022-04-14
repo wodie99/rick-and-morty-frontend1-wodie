@@ -1,0 +1,9 @@
+.character-gallery{
+    background-color: #3b3b41;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
