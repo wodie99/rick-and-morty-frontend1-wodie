@@ -13,3 +13,9 @@
 
     opacity: 0.9;
 }
+
+.character-card:active{
+    box-shadow: 0px 0px 70px #ee1426;
+
+    opacity: 0.9;
+}

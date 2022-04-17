@@ -1,4 +1,4 @@
-header{
+.title-block{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +12,7 @@ header{
 }
 
 #rm-logo{
-    display: flex;
     height: 2.5rem;
-   /* margin-top: 1.5%;*/
     margin-right: 1%;
     background-color: lightgrey;
     border-radius: 100%;

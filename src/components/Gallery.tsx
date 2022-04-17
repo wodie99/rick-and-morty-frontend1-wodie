@@ -3,7 +3,7 @@ import CharacterCard from "./CharacterCard";
 import "./Gallery.css";
 
 type GalleryProps = {
-     characters: Character[]
+     characters: Character[] 
 }
 
 export default function Gallery({characters}:GalleryProps){
