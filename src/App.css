@@ -33,3 +33,9 @@
   background-color: hotpink;
   cursor: pointer;
 }
+
+#show-all-button:hover{
+  background-color:red;
+  font-weight: bold;
+  font-size: 20px;
+}

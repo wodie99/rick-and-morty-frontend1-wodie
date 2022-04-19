@@ -25,10 +25,10 @@ export default function Gallery({characters}: GalleryProps) {
         setInput("");
         setFilteredCharacters(characters);
     }
+
     useEffect(() => {
         setFilteredCharacters(characters)
     }, [characters])
-
 
     return <div>
         <div className={"searchbar"}>
@@ -38,11 +38,9 @@ export default function Gallery({characters}: GalleryProps) {
             <button onClick={resetInput}>Reset</button>
         </div>
         {filteredCharacters.length > 0
-            ? <div className={"character-gallery"}>{filteredCharacters.map(character => <CharacterCard
-                character={character}/>)}</div>
+            ? <div className={"character-gallery"}>{filteredCharacters.map(character => <CharacterCard character={character}/>)}</div>
             : <h1>No character with with name "{savedInput}" "found.</h1>
         }
-
 
     </div>
 }
