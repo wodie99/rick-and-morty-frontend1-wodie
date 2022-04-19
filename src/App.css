@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.inputName {
+padding-top: 60px;
+}
 
 .App-logo {
   height: 40vmin;
