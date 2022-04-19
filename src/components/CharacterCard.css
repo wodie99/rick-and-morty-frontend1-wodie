@@ -15,7 +15,7 @@
 }
 
 .character-card:active{
-    box-shadow: 0px 0px 70px #ee1426;
+    box-shadow: 0px 0px 70px #f50606;
 
     opacity: 0.9;
 }
