@@ -24,17 +24,11 @@ function App() {
             .catch(console.error)
     }
 
-    let beispiel:string = "Beispiel";
-    let beispiel2:string = "text"
-    console.log(beispiel + beispiel2);
 
     useEffect(() => {
         fetchCharacters()
             .then(body => setCharacters(body.results))
     }, [])
-
-
-
 
 
     const onButtonClick = () => {
