@@ -18,11 +18,19 @@ export default function Gallery({characters}:GalleryProps){
           setFilteredCharacters(characters.filter(character => character.name.includes(input)));
      }
 
+     const resetInput = () => {
+         setInput("");
+         setFilteredCharacters(characters);
+     }
+
+
+
      return    <div>
                     <div className={"searchbar"}>
                         <label>Search Character</label>
                         <input value={input} onChange={getInput} id={"input-field"}/>
                         <input type={"submit"} value={"Search"} onClick={searchCharacter}/>
+                        <button onClick={resetInput}>Reset</button>
                     </div>
                     <div className={"character-gallery"}>{filteredCharacters.map(character => <CharacterCard character = {character} />)
                     }
