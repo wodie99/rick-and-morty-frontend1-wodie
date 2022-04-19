@@ -1,13 +1,31 @@
 import {Character} from "../model/Character";
 import CharacterCard from "./CharacterCard";
 import "./Gallery.css";
+import {ChangeEvent, useState} from "react";
 
 type GalleryProps = {
      characters: Character[]
 }
 
 export default function Gallery({characters}:GalleryProps){
-     return  <div className={"character-gallery"}>{characters.map(character => <CharacterCard character = {character} />)
+     
+     const [input, setInput] = useState<string>("")
+     const [filteredCharacters, setFilteredCharacters] = useState<Character[]>(characters);
 
-     } </div>
+     const getInput = (event: ChangeEvent<HTMLInputElement>) => setInput(event.target.value)
+
+     const searchCharacter = () =>{
+          setFilteredCharacters(characters.filter(character => character.name.includes(input)));
+     }
+
+     return    <div>
+                    <div className={"searchbar"}>
+                        <label>Search Character</label>
+                        <input value={input} onChange={getInput} id={"input-field"}/>
+                        <input type={"submit"} value={"Search"} onClick={searchCharacter}/>
+                    </div>
+                    <div className={"character-gallery"}>{filteredCharacters.map(character => <CharacterCard character = {character} />)
+                    }
+                    </div>
+               </div>
 }

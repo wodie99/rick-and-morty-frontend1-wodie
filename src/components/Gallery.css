@@ -5,8 +5,17 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 60px;
-
 }
 
+
+.searchbar{
+    background-color: cadetblue;
+    padding: 10px;
+}
+#input-field{
+    width: 60%;
+    margin: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
 
 
