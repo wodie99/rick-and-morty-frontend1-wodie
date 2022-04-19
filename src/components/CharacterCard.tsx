@@ -2,11 +2,11 @@ import {Character} from "../model/Character";
 import "./CharacterCard.css";
 
 type CharacterCardProps = {
-    character : Character
+    character: Character
 }
 
-export default function CharacterCard( { character } : CharacterCardProps ) {
-    return <div className = {"character-card"}>
+export default function CharacterCard({character}: CharacterCardProps) {
+    return <div className={"character-card"}>
         <h2> {character.name} </h2>
         <img src={character.image} alt={character.name}/>
         <h3> Status: {character.status}</h3>
