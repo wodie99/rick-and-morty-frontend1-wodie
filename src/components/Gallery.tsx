@@ -10,8 +10,7 @@ export default function Gallery({characters}: GalleryProps) {
     if (characters.length === 0) {
         return <h1>Leider keine Treffer!</h1>
     } else {
-        return <div className={"character-gallery"}>{characters.map(character => <CharacterCard
-            character={character}/>)
+        return <div className={"character-gallery"}>{characters.map(character => <CharacterCard character={character}/>)
         } </div>
     }
 }

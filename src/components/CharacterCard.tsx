@@ -13,10 +13,10 @@ export default function CharacterCard( { character } : CharacterCardProps ) {
     // const onCardClick = () => {
     //     console.log("Click in CharacterCard")
     //     console.log(character.name)
-        // navigate("/character/:id")
-    }
-}
-    return <div className = "character-card" >
+    // navigate("/character/:id")
+
+
+    return <div className="character-card">
         <h2> {character.name} </h2>
         <img src={character.image}/>
         <h3> Status: {character.status}</h3>
