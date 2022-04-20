@@ -2,11 +2,13 @@
     text-align: center;
 }
 
-.inputName {
 
 
-
+.Links {
+    text-align: right;
+    padding-top: 100px;
 }
+
 
 .inputName button {
     padding-top: 65px;
