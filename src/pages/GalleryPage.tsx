@@ -1,5 +1,5 @@
 import React, {ChangeEvent, useEffect, useState} from 'react';
-
+import "./GalleryPage.css"
 import Title from "./../components/Title";
 import Gallery from "./../components/Gallery";
 import CharacterCard from "./../components/CharacterCard";

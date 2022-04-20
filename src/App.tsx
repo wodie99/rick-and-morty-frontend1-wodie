@@ -8,35 +8,32 @@ import CharacterDetailPage from './components/CharacterDetailPage';
 
 function MainPage() {
     return (
-        <div className={"Links"}>
+        <div className={"Homepage"}>
 
-            <h1>Hallo</h1>
-
-            <Link to="/">MainPage</Link>
-            <Link to="/p1">GalleryPage</Link>
-            <Link to="/p2">Impressum</Link>
+            <h1>Hallo auf der Startseite</h1>
 
         </div>
     );
 }
 
 function App() {
+
+
     return (
 
         <div className="App">
 
-            <Title/>
+
 
             <BrowserRouter>
+                <Title />
                 <Routes>
-
-                    <Route path="/" element={<MainPage/>}/>
-                    <Route path="/p1" element={<GalleryPage/>}/>
-                    {/*<Route path="/character/:id" element={<CharacterDetailPage/>}/>*/}
-                    <Route path="p2" element={<Impressum/>}/>
-
+                    <Route path={"/"} element={<MainPage />}/>
+                    <Route path={"/p1"} element={<GalleryPage />}/>
+                    <Route path={"/p2"} element={<Impressum />}/>
                 </Routes>
             </BrowserRouter>
+
 
         </div>
     );

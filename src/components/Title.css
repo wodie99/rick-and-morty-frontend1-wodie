@@ -1,14 +1,25 @@
 header {
     display: flex;
     flex-direction: row;
+}
+a {
+    font-size:22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: lightgrey;
+}
 
+nvvlink a {
+    font-size:30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .Row1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 85px;
     /*padding-bottom: 20px;*/
     background-color: #181717;
     color: lightgrey;
@@ -35,6 +46,8 @@ header #rm-logo{
     justify-content: right;
     padding-top: 50px;
 
+
+
     width: 100%;
     position: fixed;
 
@@ -45,6 +58,7 @@ header #rm-logo{
 }
 .L2 {
     padding-left: 50;
+
 }
 .L3 {
     padding-left: 50;
